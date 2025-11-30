@@ -29,5 +29,4 @@ map(download, URLs, filenames);
 # this is how the `download` function would be called
 # on a single URL and filename:
 #
-
 # download(URLs[1], filenames[1])
