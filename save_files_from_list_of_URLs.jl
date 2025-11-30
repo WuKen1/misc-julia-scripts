@@ -6,8 +6,7 @@ function download(args...)
 end
 
 folder_name = "sakuga"
-directory_path = joinpath(raw"C:\Users\Username\Pictures_local",
-                          folder_name)
+directory_path = joinpath(raw"C:\Users\Username\Pictures_local", folder_name)
 
 # create folder if it doesn't already exist
 isdir(directory_path) ? nothing : mkpath(directory_path)
@@ -30,4 +29,5 @@ map(download, URLs, filenames);
 # this is how the `download` function would be called
 # on a single URL and filename:
 #
+
 # download(URLs[1], filenames[1])
